@@ -6,9 +6,10 @@ CMS: https://data.cms.gov/provider-data/?redirect=true
 MIMIC-III: https://mimic.mit.edu/docs/gettingstarted/
 
 Preprocessing
-python data_preparation.py
+python3 data_preparation.py
 
 Training
 python3 train_tesan.py --data_source mimic3 --model delta --gpu 2 --max_epoch 1 --num_steps 10000 --train_batch_size 64 --num_samples 10 --reduced_window True --skip_window 6 --verbose True --is_scale False --is_date_encoding False --task embedding
 
 Evaluation
+python3 train_tesan.py --test
