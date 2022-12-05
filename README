@@ -1,6 +1,16 @@
 Dependencies
-
+tensorflow==1.13.2
 
 Download instruction of data and pretrained model 
 
 
+
+
+Function of each script: Preprocessing/Training/Evaluation
+
+
+
+
+Instruction to run the code
+
+python3 train_tesan.py --data_source mimic3 --model delta --gpu 2 --max_epoch 1 --num_steps 10000 --train_batch_size 64 --num_samples 10 --reduced_window True --skip_window 6 --verbose True --is_scale False --is_date_encoding False --task embedding
