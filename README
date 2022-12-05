@@ -1,5 +1,7 @@
 Dependencies
 tensorflow==1.13.2
+sklearn
+numpy
 
 Data
 CMS: https://data.cms.gov/provider-data/?redirect=true
